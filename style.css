@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #EF476F;
+    text-align: center;
+}
+nav{
+    color: #EF476F;
+    padding: 1% 1%;
+    position: sticky;
+    top: 0;
+    background-color: #073B4C;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    color: #EF476F;
+    text-decoration: none;
+    display: flex;
+}
+ul li a:hover{
+    color: #FFD166;
+}
+
+h2{
+    color: #EF476F;
+    text-align: center;
+    margin: 1% 0;
+}
+#hero_image{
+    display: flex;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://source.unsplash.com/Lhb-zwQ-QGI");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60%;
+    margin: 0 10%;
+}
+#hero_text{
+    display: flex;
+    
+    color: #EF476F;
+}
+#hero_text h2{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+#hero_text p{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    padding: 0 3%;
+}

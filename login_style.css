@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #EF476F;
+    text-align: center;
+}
+nav{
+    color: #EF476F;
+    padding: 1% 1%;
+    position: sticky;
+    top: 0;
+    background-color: #073B4C;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+}
+ul li a{
+    color: #EF476F;
+    text-decoration: none;
+    display: flex;
+}
+ul li a:hover{
+    color: #FFD166;
+}
+#loginInfo{
+    display:flex;
+    flex-direction: column;
+    margin: 10%;
+    padding: 10%;
+    border: black solid;
+}
+input{
+    width:30%;
+    margin-bottom: 2%;
+}
+#submit{
+    width:fit-content;
+}
