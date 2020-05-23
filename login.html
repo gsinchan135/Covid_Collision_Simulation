@@ -16,16 +16,22 @@
     </ul>
 </nav>
 <body>
-    <form action="" id="loginInfo">
-        <label for="email">Enter email:</label>
-        <input type="email" name="email" id="email">
-
-        <label for="password">Enter password:</label>
-        <input type="password" name="password" id="password">
-
-        <input type="submit" value="Submit" id="submit">
-
-    </form>
+        <form action="#" id="loginInfo">  
+            <h1>LOGIN</h1>
+            <img id="userIcon" src ="./assets/user.svg">  <!--https://www.flaticon.com/free-icon/icon_702983?term=user%20icon&page=1&position=16-->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" pattern="(?=.*\d).{8,}" required>
+            <div id="passwordMsg">
+                <p id="charLength" class="invalid"> At least 8 characters</p>
+                <p id="aNumber" class="invalid"> At least 1 number</p>
+            </div>
+    
+            <p id="forgot">Forgot Password?</p>
+            <input type="submit" value="Login" id="submit">
+        </form>
 </body>
 <script src="./login_script.js"></script>
 </html>
