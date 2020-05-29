@@ -1,7 +1,7 @@
-const thePassword = document.getElementById("password");  //form input password
-const validationMsg = document.getElementById("passwordMsg"); //div containing message indicating what is missing from an acceptable password
-const number = document.getElementById("aNumber"); //p alerting user if they have a number in password
-const length = document.getElementById("charLength");//p alerting user if they have 8 characters or more
+const thePassword = document.getElementById("password");
+const validationMsg = document.getElementById("passwordMsg");
+const number = document.getElementById("aNumber");
+const length = document.getElementById("charLength");
 
 
 thePassword.onfocus = function(){
