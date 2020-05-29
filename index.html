@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Bubble Collision Simulator</title>
+    <script src="https://kit.fontawesome.com/95cec7d49f.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<nav>
+    <h1>COVID Collision Simulation</h1>
+    <ul>
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" target="_blank">Learn More</a></li>
+        <li><a href="./home.html">Logout</a></li>
+    </ul>
+</nav>
+
+<body>
+
+	<header class="page-header">
+		<h1>Bubble Simulation</h1>
+		<div id="stats">
+			<h2 id="sick">Sick bubbles: <span id="number">0</span></h2>
+			<h2 id="time">Time: <span id="minutes">00</span>:<span id="seconds">00</span></h2>
+		</div>
+		
+	</header>
+
+	<main>
+		<canvas tabindex='1'></canvas>
+	</main>
+
+	<form id="controls">
+		<span id="pageSize">
+			<p>Screen Size:</p>
+			<input type="radio" value="300" id="smlScrn" class="screenSize" name="screen">
+			<label for="smlScrn">Small</label><br>
+
+			<input type="radio" value="400" id="mdmScrn" class="screenSize" name="screen">
+			<label for="mdmScrn">Medium</label><br>
+
+			<input type="radio" value="500" id="lrgScrn" class="screenSize" name="screen" checked="checked">
+			<label for="lrgScrn">Large</label><br>
+		</span>
+
+		<span id="immunity">
+			<p>Immunity:</p>
+			<input type="radio" id="immuneBtn" name="immuneBtn">
+			<label id="immuneToggle">Off</label> 
+		</span>
+
+		<span class="column">
+			<label for="bubbleSize">Bubble Size (50 max):</label>
+			<span id="size">
+				<input type="range" value="10" id="bubbleSize" name="bubbleSize" min="2" max="50" oninput="sizeAmount.value=bubbleSize.value">
+				<input id="sizeAmount" class="numberBox" value="10" type="number" min="2" max="50" oninput="bubbleSize.value=sizeAmount.value" />
+			</span>
+			
+			<label for="numBubbles">Number of Bubbles (500 max):</label>
+			<span id="amount">
+				<input type="range" value="70" id="numBubbles" name="numBubbles" min="0" max="500" oninput="numAmount.value=numBubbles.value">
+				<input id="numAmount" class="numberBox" value="70" type="number" min="0" max="500" oninput="numBubbles.value=numAmount.value" />
+			</span>
+			
+			<label for="staticBubbles">Static Bubbles:</label>
+			<span id="static">
+				<input type="range" value="0" id="staticBubbles" name="staticBubbles" min="0" max="numBubbles.value" oninput="staticAmount.value=staticBubbles.value">
+				<input id="staticAmount" class="numberBox" value="0" type="number" min="0" max="numBubbles.value" oninput="staticBubbles.value=staticAmount.value" />
+			</span>
+			
+		</span>
+			
+		<span class="column">
+			<label for="sickRatio">Sick/Healthy Ratio (1 max):</label>
+			<span id="sick">
+				<input type="range" value="0.2" id="sickRatio" name="sickRatio" min="0" max="1" step="0.1" oninput="sickRatioAmount.value=sickRatio.value">
+				<input id="sickRatioAmount" class="numberBox" value="0.2" type="number" min="0" max="1" step="0.1" oninput="sickRatio.value=sickRatioAmount.value" />
+			</span>
+			
+			<label for="bubbleSpeed">Speed (5 max):</label>
+			<span id="speed">
+				<input type="range" value="1" id="bubbleSpeed" name="bubbleSpeed" min="0" max="5" step="0.5" oninput="speedAmount.value=bubbleSpeed.value">
+				<input id="speedAmount" class="numberBox" value="1" type="number" min="0" max="5" step="0.5" oninput="bubbleSpeed.value=speedAmount.value" />
+				
+			</span>
+
+			<span>
+				<button type="button" id="start">Start</button>
+			</span>
+		</span>
+		
+	</form>
+	<footer>
+		<div id="ftTxt">
+			<p>Copyright &copy; 2020 A Company, Inc. All Rights Reserved</p>
+			<p class="footerXtras">Terms of use</p>
+			<p class="footerXtras">Privacy policy</p>
+		</div>
+			
+		<div id="icons">
+			<i class="fab fa-facebook-square fa-2x"></i>
+			<i class="fab fa-instagram fa-2x"></i>
+			<i class="fab fa-twitter fa-2x"></i>
+			<i class="fas fa-phone fa-2x"></i>
+		</div>
+		
+
+		<div id="infoTxt" style="display: none;">
+			<p>On how to stay safe: <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Click Here</a></p>
+			<p>For post-secondary students: <a href="https://www.canada.ca/en/services/benefits/ei/cerb-application.html">Click Here</a></p>
+		</div>
+	</footer>  
+	
+
+	<script src="./utilities.js"></script>
+	<script src="./bubble-collision.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>
