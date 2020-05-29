@@ -22,8 +22,7 @@
             <h1>LOGIN</h1>
             <img id="userIcon" src ="./assets/user.svg">  <!--https://www.flaticon.com/free-icon/icon_702983?term=user%20icon&page=1&position=16-->
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required pattern="\w+@\w+\.\w+">
-        
+            <input type="email" name="email" id="email" required pattern="[\w\.-]+@[\w\.-]+\.\w+">
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" pattern="(?=.*\d).{8,}" required>
             <div id="passwordMsg">
