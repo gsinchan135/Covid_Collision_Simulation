@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home_style.css">
+    <script src="https://kit.fontawesome.com/95cec7d49f.js" crossorigin="anonymous"></script>
     <title>Home</title>
 </head>
 <nav>
     <h1>COVID Collision Simulation</h1>
-    <ul>
+
+    <ul >
         <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" target="_blank">Learn More</a></li>
         <li><a href="./login.html">Login</a></li>
-        <li><a href="#">Simulation</a></li>
     </ul>
+
 </nav>
 <body>
-    <h2>Welcome!</h2>
+
+    <h2>Welcome</h2>
     <div id="hero_image">
         <div id="hero_text">
             <p>Hello and welcome to the COVID collision simulation. Our company has put in the effort to create a simulation that demonstrates how COVID-19 spreads.
@@ -32,10 +37,77 @@
             </p>
         </div>
     </div>
+
+   
     <h2>Tutorial</h2>
     <div id="tutorial">
+        <div>
+            <h4>Starting:</h4>
+            <div class="tutorialTxt">
+                <p>To gain access to our simulation, you must first login at the top right of your screen. An email and password is required. 
+                    <br>All passwords require a minimum of 8 characters and require at least 1 number.</p>
+                <img src="./assets/login.png" height="50px">
+            </div>
+        </div>
+
+        <div>
+            <h4>Screen:</h4>
+            <div class="tutorialTxt">
+                <p>When you first get on the simulation you have the option of changing the size of the simulation. You're given 3 options of small, medium and large.
+                    Small is 300 pixels tall and 60% of the screen width. Medium is 400 pixels tall and 80% of the screen width. Large is 500 pixels tall and 90% of the screen width.
+                </p>
+                <img src="./assets/screen_size.png" height ="80px">
+            </div>
+        </div>
+        <div>
+            <h4>Bubbles:</h4>
+            <div class="tutorialTxt">
+                <p>All controls for the bubbles have a slider and a box. You can drag the slider to the left to decrease or drag to the right whatever it is you're trying to change.
+                    If there's a specific number you want and you're having trouble with the slider, then the box next to it allows you to directly input the number you want. 
+                    You're allowed to control the size of the bubbles, the number of bubbles, the number of static (non moving) bubbles, 
+                    starting ratio between sick and healthy, as well as the speed of the bubbles.
+                </p>
+                <img src="./assets/bubble_controls.png" height="80px">
+            </div>
+            
+        </div>
+
+        <div>
+            <h4>Simulator:</h4>
+            <div class="tutorialTxt">
+                <p>
+                    The simulator keeps track of the number of sick bubbles and time, both located above the simulation. Press the button in the bottom right corner of the controls
+                    labelled "start" to start the simulation. If it any point you wish to stop, press the button again. Changing any of the controls while the simulation is running 
+                    automatically stops the simulation and will not take effect until the start button is hit. If it any point the simulation begins slowing down try refreshing the page.
+                    This should solve the issue and you don't have to worry about being logged out.
+                    </p>
+            </div>
+
+            
+        </div>
 
     </div>
+
+    <footer>
+        <div id="ftTxt">
+            <p>Copyright &copy; 2020 A Company, Inc. All Rights Reserved</p>
+            <p class="footerXtras">Terms of use</p>
+            <p class="footerXtras">Privacy policy</p>
+        </div>
+            
+        <div id="icons">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fas fa-phone fa-2x"></i>
+        </div>
+        
+
+        <div id="infoTxt" style="display: none;">
+            <p>On how to stay safe: <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Click Here</a></p>
+            <p>For post-secondary students: <a href="https://www.canada.ca/en/services/benefits/ei/cerb-application.html">Click Here</a></p>
+        </div>
+    </footer>  
 <div>
 </body>
 </html>
