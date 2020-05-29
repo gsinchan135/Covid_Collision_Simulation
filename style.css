@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #121212;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+html{
+    height: 100vh;
+}
+h1{
+    color: #26A7F7;
+    text-align: center;
+}
+nav{
+    color: #26A7F7;
+    padding: 1% 1%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #03324F;
+    display: flex;
+    justify-content: space-between;
+    border: 4px outset #0E92BE;
+    margin-bottom: 1%;
+
+}
+ul{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    display: flex;
+    list-style-type: none;
+    border-left: 1px solid #E0E0E0;
+
+}
+ul li a{
+    color: #26A7F7;
+    text-decoration: none;
+    display: flex;
+}
+ul li a:hover{
+    color: #14ADB8;
+    font-weight: bolder;
+}
+
+header {
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+#stats{
+    display: flex;
+    justify-content: space-between;
+    color: #26A7F7;
+
+}
+
+canvas {
+    border: 2px solid papayawhip;
+}
+
+main{
+    display: flex;
+    justify-content: baseline;  /*Main is loaded in the center of page because of flex-direction: column.
+                                 this loads it on the left of the page or baseline of the column so that the canvas isnt offset to the right when page is loaded*/
+}                               
+
+#controls{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    color: #26A7F7;
+    padding: 0 10%;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    border-top:4px solid #0E92BE;
+    background-color: #03324F;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    font-size: small;
+    padding: 1% 0;
+    justify-content: space-between;
+    color: #26A7F7;
+}
+#ftTxt > p{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#ftTxt{
+    display: flex;
+    flex: 9;
+
+}
+
+#icons{
+    color: lightgray;
+    width: max-content;
+    display: flex;
+    flex: 1;
+}
+#icons > i{
+    padding-right: 10%;
+}
+.footerXtras{
+    cursor: pointer;
+    width: fit-content;
+    color: gray;
+}
