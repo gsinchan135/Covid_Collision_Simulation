@@ -4,34 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./login_style.css">
-
+    <script src="https://kit.fontawesome.com/95cec7d49f.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
 <nav>
     <h1>COVID Collision Simulation</h1>
     <ul>
         <li><a href="./home.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection.html" target="_blank">Learn More</a></li>
         <li><a href="#">Login</a></li>
-        <li><a href="#">Simulation</a></li>
     </ul>
 </nav>
+
 <body>
-        <form action="#" id="loginInfo">  
+        <form action="./index.html" id="loginInfo">  
             <h1>LOGIN</h1>
             <img id="userIcon" src ="./assets/user.svg">  <!--https://www.flaticon.com/free-icon/icon_702983?term=user%20icon&page=1&position=16-->
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-    
+            <input type="email" name="email" id="email" required pattern="\w+@\w+\.\w+">
+        
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" pattern="(?=.*\d).{8,}" required>
             <div id="passwordMsg">
                 <p id="charLength" class="invalid"> At least 8 characters</p>
                 <p id="aNumber" class="invalid"> At least 1 number</p>
             </div>
-    
+        
             <p id="forgot">Forgot Password?</p>
             <input type="submit" value="Login" id="submit">
         </form>
+
+        <footer>
+            <div id="ftTxt">
+                <p>Copyright &copy; 2020 A Company, Inc. All Rights Reserved</p>
+                <p class="footerXtras">Terms of use</p>
+                <p class="footerXtras">Privacy policy</p>
+            </div>
+                
+            <div id="icons">
+                <i class="fab fa-facebook-square fa-2x"></i>
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-twitter fa-2x"></i>
+                <i class="fas fa-phone fa-2x"></i>
+            </div>
+            
+    
+            <div id="infoTxt" style="display: none;">
+                <p>On how to stay safe: <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">Click Here</a></p>
+                <p>For post-secondary students: <a href="https://www.canada.ca/en/services/benefits/ei/cerb-application.html">Click Here</a></p>
+            </div>
+        </footer>       
 </body>
 <script src="./login_script.js"></script>
 </html>
